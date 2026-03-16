@@ -72,4 +72,21 @@ body {
 .clear, .delete {
     background-color: #f44336; /* Red color for reset/delete */
 }
+/* --- Visual Feedback Effects --- */
+
+/* Hover state: Brighten button when mouse/cursor is over it */
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+/* Active state: Shrink button and add inset shadow when clicked */
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Specific hover overrides to keep colors consistent */
+.operator:hover { filter: brightness(1.1); }
+.equal:hover { filter: brightness(1.1); }
+.clear:hover, .delete:hover { filter: brightness(1.1); }
 
