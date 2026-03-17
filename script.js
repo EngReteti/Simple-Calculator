@@ -8,9 +8,16 @@ buttons.forEach(button => {
     button.addEventListener('click', () => {
         const value = button.innerText;
 
-        // For now, let's just make numbers and the decimal point appear
-        if (!isNaN(value) || value === '.') {
-            // Append the clicked number to the display
+        // Logic for Clear button
+        if (button.classList.contains('clear')) {
+            display.value = "";
+        } 
+        // Logic for Delete button (removes the last character)
+        else if (button.classList.contains('delete')) {
+            display.value = display.value.slice(0, -1);
+        }
+        // Logic for Numbers and Decimal
+        else if (!isNaN(value) || value === '.') {
             display.value += value;
         }
     });
