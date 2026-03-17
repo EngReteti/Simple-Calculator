@@ -8,16 +8,26 @@ buttons.forEach(button => {
     button.addEventListener('click', () => {
         const value = button.innerText;
 
-        // Logic for Clear button
+        // 1. Clear Function
         if (button.classList.contains('clear')) {
             display.value = "";
         } 
-        // Logic for Delete button (removes the last character)
+        // 2. Delete Function
         else if (button.classList.contains('delete')) {
             display.value = display.value.slice(0, -1);
         }
-        // Logic for Numbers and Decimal
-        else if (!isNaN(value) || value === '.') {
+        // 3. Equal/Calculation Function
+        else if (button.classList.contains('equal')) {
+            try {
+                // eval() calculates the string expression
+                display.value = eval(display.value);
+            } catch (e) {
+                display.value = "Error";
+            }
+        }
+        // 4. Numbers and Operators Input
+        else {
+            // This captures numbers, decimals, and operators (+, -, *, /)
             display.value += value;
         }
     });
