@@ -46,11 +46,12 @@ cd Simple-Calculator
 ​📝 Learning Journey
 
 ​This project marks the successful completion of my Vanilla JavaScript fundamentals. By building this from scratch, I have mastered event delegation, CSS positioning, and Git workflow. I used this space to build a simple calculator that features concepts in HTML, CSS, and JS. This has truly given me the basics I required and I'm now ready to start exploring frameworks like React & Vue.js.
-​
+
 📄 License
 ​
 This project is licensed under the MIT License - see the LICENSE file for details.
-​
+
+
 If you find this project helpful, please leave a Star ⭐!
 
 ---
