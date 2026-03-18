@@ -1,30 +1,27 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-/* This centers the calculator perfectly in the middle of the browser */
 body {
     background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Uses full height of the screen */
+    display: flex; /* Centers the calculator horizontally */
+    justify-content: center; 
+    align-items: center; /* Centers the calculator vertically */
+    min-height: 100vh;
 }
 
-/* The Main Calculator Body */
 .calculator {
     background-color: #333;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    width: 340px; /* Fixed width keeps it from stretching */
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    width: 320px; /* Fixed width prevents stretching */
+    display: flex;
+    flex-direction: column; /* Stacks display on top of buttons */
 }
 
-/* This keeps the display INSIDE the calculator */
 .display {
     width: 100%;
     margin-bottom: 20px;
@@ -32,35 +29,33 @@ body {
 
 .display #result {
     width: 100%;
-    height: 60px;
+    height: 70px;
     background-color: #222;
     border: none;
     outline: none;
     color: #fff;
     text-align: right;
-    padding: 15px;
-    font-size: 2rem;
-    border-radius: 8px;
+    padding: 20px;
+    font-size: 2.2rem;
+    border-radius: 10px;
 }
 
-/* Grid for the buttons */
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 12px;
 }
 
 .btn {
-    padding: 20px;
+    padding: 18px;
     font-size: 1.1rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     background-color: #444;
     color: white;
 }
 
-/* Button Colors */
 .clear, .delete { background-color: #f44336; }
 .operator { background-color: #ff9800; }
 .equal { 
@@ -68,7 +63,5 @@ body {
     background-color: #2196F3; 
 }
 
-/* Interactive Feedback */
-.btn:hover { filter: brightness(1.2); }
 .btn:active { transform: scale(0.95); }
 
