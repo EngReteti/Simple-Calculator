@@ -1,33 +1,31 @@
-// Select the display input field
+// References to DOM elements
 const display = document.getElementById('result');
-// Select all buttons
 const buttons = document.querySelectorAll('.btn');
 
-// Loop through each button to add a click event listener
+// Add click listeners to all buttons
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         const value = button.innerText;
 
-        // 1. Clear Function
+        // Reset the display
         if (button.classList.contains('clear')) {
             display.value = "";
         } 
-        // 2. Delete Function
+        // Remove the last character typed
         else if (button.classList.contains('delete')) {
             display.value = display.value.slice(0, -1);
         }
-        // 3. Equal/Calculation Function
+        // Calculate the expression in the display
         else if (button.classList.contains('equal')) {
             try {
-                // eval() calculates the string expression
+                // Perform math using the string currently in display
                 display.value = eval(display.value);
             } catch (e) {
                 display.value = "Error";
             }
         }
-        // 4. Numbers and Operators Input
+        // Append numbers and operators to the same display
         else {
-            // This captures numbers, decimals, and operators (+, -, *, /)
             display.value += value;
         }
     });

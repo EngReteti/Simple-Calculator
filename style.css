@@ -1,41 +1,12 @@
-/* Styling for the display container to hold two levels of text */
-.display {
-    background-color: #222;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    text-align: right;
-}
-
-/* New history text styling */
-#history {
-    color: #888;
-    font-size: 0.9rem;
-    min-height: 20px; /* Keeps the space even when empty */
-    margin-bottom: 5px;
-    padding-right: 5px;
-}
-
-/* Adjust the existing result input to fit better */
-.display #result {
-    width: 100%;
-    height: 40px; /* Reduced height to make room for history */
-    background: transparent;
-    color: #fff;
-    border: none;
-    outline: none;
-    text-align: right;
-    font-size: 1.8rem;
-}
-/* Reset default browser margins and padding */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-/* Center the calculator on the entire screen */
+/* Center the calculator on the page */
 body {
     background-color: #f4f4f9;
     display: flex;
@@ -44,16 +15,16 @@ body {
     height: 100vh;
 }
 
-/* Main calculator container styling */
+/* Main calculator container */
 .calculator {
     background-color: #333;
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     width: 320px;
 }
 
-/* Styling for the display/input area */
+/* Single display styling */
 .display #result {
     width: 100%;
     height: 60px;
@@ -67,55 +38,34 @@ body {
     border-radius: 8px;
     margin-bottom: 20px;
 }
-/* Container for all buttons using CSS Grid */
+
+/* Grid layout for buttons */
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
-    gap: 10px; /* Spacing between buttons */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
-/* Base button styling */
+/* General button styling */
 .btn {
     padding: 20px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     background-color: #444;
     color: white;
-    transition: background-color 0.2s; /* Smooth color change on hover */
 }
 
-/* Specific styling for the equal button to span two columns */
-.equal {
-    grid-column: span 2;
-    background-color: #2196F3; /* Blue color for action */
+/* Color coding for specific buttons */
+.clear, .delete { background-color: #f44336; }
+.operator { background-color: #ff9800; }
+.equal { 
+    grid-column: span 2; 
+    background-color: #2196F3; 
 }
 
-/* Styling for operator buttons */
-.operator {
-    background-color: #ff9800; /* Orange color for operations */
-}
-
-/* Styling for the clear and delete buttons */
-.clear, .delete {
-    background-color: #f44336; /* Red color for reset/delete */
-}
-/* --- Visual Feedback Effects --- */
-
-/* Hover state: Brighten button when mouse/cursor is over it */
-.btn:hover {
-    filter: brightness(1.2);
-}
-
-/* Active state: Shrink button and add inset shadow when clicked */
-.btn:active {
-    transform: scale(0.95);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.5);
-}
-
-/* Specific hover overrides to keep colors consistent */
-.operator:hover { filter: brightness(1.1); }
-.equal:hover { filter: brightness(1.1); }
-.clear:hover, .delete:hover { filter: brightness(1.1); }
+/* Hover and Active states for feedback */
+.btn:hover { filter: brightness(1.2); }
+.btn:active { transform: scale(0.95); }
 
