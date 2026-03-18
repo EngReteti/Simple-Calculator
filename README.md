@@ -24,20 +24,34 @@ A sleek, responsive, and functional web calculator built with Vanilla JavaScript
 
 ---
 🛠️ Tech Stack
+
 ​HTML5: Semantic structure.
+
 ​CSS3: Custom properties, Grid, and Flexbox for centering.
+
 ​JavaScript ES6: DOM Manipulation and Event Listeners.
+
 ​⚙️ How to Run Locally
+
 ​Clone the repository:
+
 git clone https://github.com/EngReteti/Simple-Calculator.git
+
 ​Navigate to the directory:
+
 cd Simple-Calculator
+
 ​Open index.html in any browser.
+
 ​📝 Learning Journey
+
 ​This project marks the successful completion of my Vanilla JavaScript fundamentals. By building this from scratch, I have mastered event delegation, CSS positioning, and Git workflow. I used this space to build a simple calculator that features concepts in HTML, CSS, and JS. This has truly given me the basics I required and I'm now ready to start exploring frameworks like React & Vue.js.
-​📄 License
-​This project is licensed under the MIT License - see the LICENSE file for details.
-​If you find this project helpful, please leave a Star ⭐!
+​
+📄 License
+​
+This project is licensed under the MIT License - see the LICENSE file for details.
+​
+If you find this project helpful, please leave a Star ⭐!
 
 ---
 ## 📁 Project Structure
