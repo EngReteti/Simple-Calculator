@@ -1,3 +1,32 @@
+/* Styling for the display container to hold two levels of text */
+.display {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/* New history text styling */
+#history {
+    color: #888;
+    font-size: 0.9rem;
+    min-height: 20px; /* Keeps the space even when empty */
+    margin-bottom: 5px;
+    padding-right: 5px;
+}
+
+/* Adjust the existing result input to fit better */
+.display #result {
+    width: 100%;
+    height: 40px; /* Reduced height to make room for history */
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 1.8rem;
+}
 /* Reset default browser margins and padding */
 * {
     margin: 0;
