@@ -31,7 +31,7 @@ A sleek, responsive, and functional web calculator built with Vanilla JavaScript
 
 ​JavaScript ES6: DOM Manipulation and Event Listeners.
 
-​# ⚙️ How to Run Locally
+⚙️ How to Run locally 
 
 ​Clone the repository:
 
