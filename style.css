@@ -1,4 +1,4 @@
-/* Reset default styles */
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,25 +6,30 @@
     font-family: Arial, sans-serif;
 }
 
-/* Center the calculator on the page */
+/* This centers the calculator perfectly in the middle of the browser */
 body {
     background-color: #f4f4f9;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Uses full height of the screen */
 }
 
-/* Main calculator container */
+/* The Main Calculator Body */
 .calculator {
     background-color: #333;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    width: 320px;
+    width: 340px; /* Fixed width keeps it from stretching */
 }
 
-/* Single display styling */
+/* This keeps the display INSIDE the calculator */
+.display {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .display #result {
     width: 100%;
     height: 60px;
@@ -36,17 +41,15 @@ body {
     padding: 15px;
     font-size: 2rem;
     border-radius: 8px;
-    margin-bottom: 20px;
 }
 
-/* Grid layout for buttons */
+/* Grid for the buttons */
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
 
-/* General button styling */
 .btn {
     padding: 20px;
     font-size: 1.1rem;
@@ -57,7 +60,7 @@ body {
     color: white;
 }
 
-/* Color coding for specific buttons */
+/* Button Colors */
 .clear, .delete { background-color: #f44336; }
 .operator { background-color: #ff9800; }
 .equal { 
@@ -65,7 +68,7 @@ body {
     background-color: #2196F3; 
 }
 
-/* Hover and Active states for feedback */
+/* Interactive Feedback */
 .btn:hover { filter: brightness(1.2); }
 .btn:active { transform: scale(0.95); }
 
