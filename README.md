@@ -45,7 +45,7 @@ cd Simple-Calculator
 
 # ​📝 Learning Journey
 
-​This project marks the successful completion of my Vanilla JavaScript fundamentals. By building this from scratch, I have mastered event delegation, CSS positioning, and Git workflow. I used this space to build a simple calculator that features concepts in HTML, CSS, and JS. This has truly given me the basics I required and I'm now ready to start exploring frameworks like React & Vue.js.
+​This project marks the successful completion of my Vanilla JavaScript fundamentals. By building this from scratch, I have mastered event delegation, CSS positioning, and Git workflow. I used this space to build a simple calculator that features concepts in HTML, CSS, and JS. This has truly given me the basics I required and I'm now exploring Rest APIs concept as Asynchronous JavaScript then after that i am fully ready to start exploring frameworks like React & Vue.js.
 
 # 📄 License
 ​
